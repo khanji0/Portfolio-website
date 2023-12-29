@@ -1,0 +1,668 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* Reset and Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 50%, 2%);
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+#particles-js {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: white;
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 2rem;
+  color: wheat;
+  font-family: sans-serif; /* Sets the font to Arial */
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+.profile {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: 80vh;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+  color: wheat;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  color: white;
+  font-family: "FontName", fallback-fonts;
+}
+
+.navbar-brand {
+  font-family: "FontName", fallback-fonts;
+}
+
+.logo {
+  font-family: "FontName", fallback-fonts;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1rem;
+  display: inline-block; /* Makes the link behave like a block but only take up necessary space */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  line-height: 0; /* Removes extra line-height space */
+}
+
+.icon {
+  display: block; /* Removes any extra space below the image */
+  width: 3rem; /* Adjust width as needed */
+  height: 3rem; /* Adjust height as needed */
+  border-radius: 0%; /* Keeps it circular */
+  object-fit: cover; /* Ensures the image covers the area properly */
+  cursor: pointer;
+  height: 3rem;
+  color: white;
+  border-radius: 200px;
+  /* Other styles... */
+}
+
+/* ABOUT SECTION */
+
+#about {
+  padding-top: 10vh; /* Increased top padding to push the section down */
+  padding-right: 10rem;
+  padding-bottom: 4vh;
+  padding-left: 10rem;
+  box-sizing: border-box;
+}
+
+.about_title {
+  font-size: 3rem; /* Adjust the font size as needed */
+  text-align: center;
+  margin-bottom: 0rem; /* Space below the title */
+  color: white;
+}
+
+.section-container {
+  display: flex;
+  gap: 4rem; /* Space between picture and text containers */
+  align-items: center; /* Aligns items vertically center */
+}
+
+.section__pic-container {
+  flex-basis: 40%; /* Adjust based on how much space you want it to take */
+  text-align: center; /* Center the image if smaller than the container */
+}
+
+.profile-pic {
+  max-width: 100%; /* Ensures image is responsive */
+  height: 75%; /* Maintain aspect ratio */
+  border-radius: 200px; /* Optional: Adds rounded corners to the image */
+  margin-left: 90px; /* Adds space to the left, moving the image to the right */
+  margin-top: 30px;
+}
+
+.second-pic {
+  max-width: 100%; /* Ensures image is responsive */
+  object-fit: cover; /* important it fits the image when it does not fit */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px; /* Optional: Adds rounded corners to the image */
+}
+
+.about-details-container {
+  flex-basis: 60%; /* Adjust based on text content size */
+}
+
+.text-container {
+  font-size: 1.2rem; /* Adjust text size as needed */
+  color: rgb(85, 85, 85); /* Text color */
+  line-height: 1.6; /* Adjust line height for better readability */
+  text-align: justify;
+}
+
+/* Responsive Design for smaller screens */
+@media only screen and (max-width: 768px) {
+  .section-container {
+    flex-direction: column; /* Stack image and text on smaller screens */
+    gap: 2rem;
+  }
+
+  .section__pic-container,
+  .about-details-container {
+    flex-basis: 100%; /* Each takes full width on smaller screens */
+  }
+
+  #about {
+    padding-top: 10vh; /* Increased top padding on smaller screens */
+    padding-right: 2rem;
+    padding-bottom: 4vh;
+    padding-left: 2rem;
+  }
+}
+
+/* PROJECTS SECTION */
+
+.about-containers {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 100%; /* Take up full width of the parent */
+  /* Other styles as needed */
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  display: flex;
+}
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 33%;
+  margin: 20px; /* Spacing */
+}
+.projects-subsection {
+  display: flex;
+  justify-content: center;
+  /align-items: center;
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80%;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.experience-details-container {
+  margin-top: 3rem;
+  padding: auto;
+}
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  width: 100%; /* Adjust this as needed */
+  height: auto; /* Maintains aspect ratio */
+  display: block;
+  margin: 0 auto; /* Centers the image in the container */
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+.project-btn {
+  background-color: transparent; /* Making the background transparent */
+  border: none; /* Removing the border */
+  padding: 0; /* Removing padding */
+  display: flex; /* Aligning the icon within the button */
+  align-items: center; /* Center align vertically */
+  justify-content: center; /* Center align horizontally */
+  cursor: pointer; /* To show it's clickable */
+}
+
+.project-btn img {
+  height: 50px;
+  width: 40px;
+}
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}
+
+#math-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.1; /* Adjust transparency as needed */
+}
+
+.math-symbol {
+  position: absolute;
+  color: black;
+  font-size: 20px;
+  animation: float 5s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+
+/* Transition to DS to AI*/
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typing-effect {
+  border-right: 2px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  font-family: monospace;
+  color: rgb(236, 38, 38);
+  margin-top: 10px;
+  height: 1.2em;
+  line-height: 1.2em;
+  font-family: "FontName", fallback-fonts;
+}
+
+/* Waving hand */
+
+@keyframes waveAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(14deg);
+  } /* Slightly rotate clockwise */
+  30% {
+    transform: rotate(-8deg);
+  }
+  40% {
+    transform: rotate(14deg);
+  }
+  50% {
+    transform: rotate(-4deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  } /* Return to the initial position */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.waving-hand {
+  display: inline-block;
+  animation-name: waveAnimation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%; /* Adjusts the rotation point */
+}
+
+.about-containers {
+  margin-top: 12px;
+  width: 80%;
+  height: auto;
+  padding: 20px;
+  margin: 20px auto;
+  box-sizing: border-box;
+}
+
+.details-container {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  width: 200px;
+  height: 300px;
+  margin-right: 15px;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.experience-sub-title {
+  margin-bottom: 10px;
+}
+
+.button-container .button {
+  background-color: darkgray;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.button-container .btn-color-1 {
+  background-color: #0077b5;
+}
+
+#research-papers .details-container {
+  width: 350px;
+  height: auto;
+  padding: 20px;
+  margin: 20px;
+  box-sizing: border-box;
+}
+
+#research-papers .project-img {
+  max-width: 100%;
+  height: auto;
+}
+
+#research-papers .project-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  #research-papers .details-container {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+.projects-nav {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.projects-nav .btn {
+  margin: 0 10px;
+}
+
+.projects-nav .btn {
+  background-color: grey;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.projects-nav .btn:hover {
+  background-color: darkgrey;
+}
+
+.github-icon {
+  height: 16px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.footer-social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.social-icon {
+  height: 30px;
+  width: auto;
+  margin: 0 5px;
+}
+
+.contact-linkedin-container {
+  background-color: #0077b5;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+/* mouse animation */
+.mouse {
+  display: inline-block;
+  width: 24px;
+  height: 40px;
+  border: 2px solid white; /* Adjust color as needed */
+  border-radius: 12px; /* Rounded edges */
+  position: relative;
+}
+
+.scroll-wheel {
+  width: 4px;
+  height: 4px;
+  background: red; /* Adjust color as needed */
+  border-radius: 50%; /* Circular shape */
+  position: absolute;
+  left: 50%;
+  top: 8px;
+  transform: translateX(-50%);
+  animation: scroll-animation 2s infinite;
+}
+
+@keyframes scroll-animation {
+  0% {
+    top: 8px;
+    opacity: 1;
+  }
+  100% {
+    top: 18px;
+    opacity: 0;
+  }
+}

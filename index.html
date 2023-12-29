@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    
+</head>
+<body>
+    <!-- Navigation -->
+
+    <nav id="desktop-nav">
+        <div class="logo">Jibran Khan </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="particles-js"></div>
+    <!-- Profile Section -->
+    <section class="profile" >
+            <div class="section__pic-container">
+                <img class="profile-pic" src="./images/jk.jpg" alt="Jibran Khan profile picture" />
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello <span class="waving-hand">👋</span> I'm</p>
+                <h1 class="title">Jibran Khan</h1>
+                <p class="section__text__p2"><span id="animatedText" class="typing-effect"></span></p>
+            
+                <div class="button-container">
+                    <button class="button btn-color-2" onclick="window.open('./images/jibran-resume.pdf')">Resume</button>
+                
+                    <a href="http://www.linkedin.com/in/JibranAkhan" target="_blank" class="button btn-color-1">
+                        LinkedIn
+                    </a>
+                </div>
+                <div id="socials-container">
+                    <a href="https://github.com/khanji0/" target="_blank">
+                        <img src="./images/gitt.png" alt="My Github profile" class="icon" />
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <div id="particles-js"></div>
+    <!-- ABOUT SECTION -->
+    <section id="about" >
+        <h1 class="about_title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img class="second-pic" src="./images/khan.JPG" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="text-container">
+                    <p>Hello! My name is Jibran Ahmed Khan. I'm a senior at Luther College studying Data Science and Business Management. I am passionate about leveraging data to drive business decisions and create impactful solutions. My journey in the field of AI and data analytics has been filled with continuous learning and practical experiences. In my free time, I enjoy coding, hiking, and exploring new technologies. Feel free to reach out to discuss potential collaborations or just to say hi!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+        <img src="./images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects">
+    <h1 class="title">Portfolio</h1>
+    
+    <!-- Subsection Navigation -->
+    <div class="projects-nav">
+        <button class="btn" onclick="showSection('all-projects')">Projects</button>
+        <button class="btn" onclick="showSection('research-papers')">Research Papers</button>
+    </div>
+
+    <!-- All Projects Subsection -->
+    <div id="all-projects" class="projects-subsection" style="display: none;">
+        <div class="about-containers">
+            <!-- Project One -->
+            <div class="details-container color-container">
+                <h2 class="experience-sub-title project-title">Project Title 1</h2>
+                <div class="project-pic-1">
+                    <img src="./images/project1.png" alt="Project 1" class="project-img" />
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('your-project-link-1', '_blank')">
+                        <img src="./images/link-icon.png" alt="Link Icon" />
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project Two -->
+            <div class="details-container color-container">
+                <h2 class="experience-sub-title project-title">Project Title 2</h2>
+                <div class="project-pic-2">
+                    <img src="./images/project2.png" alt="Project 2" class="project-img" />
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('your-project-link-2', '_blank')">
+                        <img src="./images/link-icon.png" alt="Link Icon" />
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project Three -->
+            <div class="details-container color-container">
+                <h2 class="experience-sub-title project-title">Project Title 3</h2>
+                <div class="project-pic-3">
+                    <img src="./images/project3.png" alt="Project 3" class="project-img" />
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('your-project-link-3', '_blank')">
+                        <img src="./images/link-icon.png" alt="Link Icon" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Research Papers Subsection (Initially Visible) -->
+    <div id="research-papers" class="projects-subsection">
+        <div class="about-containers">
+            <!-- Project One -->
+            <div class="details-container color-container">
+                <h2 class="experience-sub-title project-title"></h2>
+                <div class="project-pic-1">
+                    <img src="./images/fm.png" alt="Research Project 1" class="project-img" />
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://arxiv.org/pdf/2309.11510.pdf', '_blank')">
+                        <img src="./images/link-icon.png" alt="Link Icon" />
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project Two -->
+            <div class="details-container color-container">
+                <h2 class="experience-sub-title project-title"></h2>
+                <div class="project-pic-2">
+                    <img src="./images/paper1.png" alt="Research Project 2" class="project-img" />
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://arxiv.org/pdf/2311.08359.pdf', '_blank')">
+                        <img src="./images/link-icon.png" alt="Link Icon" />
+                    </button>
+                </div>
+            </div>
+
+            <!-- Project Three -->
+            <div class="details-container color-container">
+                <h2 class="experience-sub-title project-title"></h2>
+                <div class="project-pic-3">
+                    <img src="./images/PAPER2.png" alt="Research Project 3" class="project-img" />
+                </div>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="window.open('https://arxiv.org/pdf/2311.09902.pdf', '_blank')">
+                        <img src="./images/link-icon.png" alt="Link Icon" />
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!--  -->
+        <img src="./images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+    </section>
+
+    <!-- CONTACT SECTION -->
+
+    <section id="contact">
+        <h1 class="title">Get in Touch</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                
+                <p><a href="mailto:khanji01@luther.edu">khanji01@luther.edu</a></p>
+            </div>
+            <div class="contact-info-container contact-linkedin-container">
+                <a href="http://www.linkedin.com/in/JibranAkhan" target="_blank">
+                    <img src="./images/lnk.png" alt="LinkedIn icon" class="icon contact-icon" />
+                </a>
+                <p><a href="http://www.linkedin.com/in/JibranAkhan">LinkedIn</a></p>
+            </div>
+            
+        </div>
+    </section>
+    
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#desktop-nav">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <!-- Social Icons Container -->
+                <div class="footer-social-icons">
+                    <!-- LinkedIn Icon -->
+                    <a href="http://www.linkedin.com/in/JibranAkhan" target="_blank">
+                        <img src="./images/lk.png" alt="LinkedIn" class="social-icon" />
+                    </a>
+                    <!-- GitHub Icon -->
+                    <a href="https://github.com/khanji0/" target="_blank">
+                        <img src="./images/gitt.png" alt="GitHub" class="social-icon" />
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
+<script src="particles.js"></script>
+<script src="myjs.js"></script>
