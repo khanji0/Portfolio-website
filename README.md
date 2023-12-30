@@ -6,22 +6,22 @@ This project involves the creation of a personal portfolio website using HTML, C
 
 ### Project Structure
 
-portfolio-website/
-│
-├── index.html # Main page containing all sections
-│
-├── css/ # Stylesheets
-│ ├── style.css # Main stylesheet
-│
-│
-├── js/ # JavaScript files
-│ ├── script.js # JavaScript logic for the SPA
-│ ├── myjs.js # external JavaScript code for particles (external file integrated)
-│ ├── particles.js # Integration with particles.js (external file integrated: https://github.com/VincentGarreau/particles.js)
-│
-├── img/ # Images and graphics
-│ ├── project1.jpg
-│ ├── project2.jpg
-│ └── ...
-│
-└── README.md
+    portfolio-website/
+    │
+    ├── index.html # Main page containing all sections
+    │
+    ├── css/ # Stylesheets
+    │ ├── style.css # Main stylesheet
+    │
+    │
+    ├── js/ # JavaScript files
+    │ ├── script.js # JavaScript logic for the SPA
+    │ ├── myjs.js # external JavaScript code for particles (external file integrated)
+    │ ├── particles.js # Integration with particles.js (external file integrated: https://github.com/VincentGarreau/particles.js)
+    │
+    ├── img/ # Images and graphics
+    │ ├── project1.jpg
+    │ ├── project2.jpg
+    │ └── ...
+    │
+    └── README.md
