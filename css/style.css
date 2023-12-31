@@ -215,10 +215,12 @@ section {
 }
 
 .text-container {
-  font-size: 1.2rem; /* Adjust text size as needed */
+  font-size: 0.9rem; /* Adjust text size as needed */
   color: rgb(85, 85, 85); /* Text color */
   line-height: 1.6; /* Adjust line height for better readability */
   text-align: justify;
+  letter-spacing: 0.05em; /* Adjust letter spacing as needed */
+  color: wheat;
 }
 
 /* Responsive Design for smaller screens */
